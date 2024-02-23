@@ -39,7 +39,7 @@ int fd = 0;
 
 	if(errn == -1)
 	{
-		printf("\n Verbindung nicht hergestellt ");
+		printf("\nVerbindung nicht hergestellt while [IP]:[PORT] is [%s]:[%d]\n", IP_ADRESSE, PORT_NUMMER);
 	}
 	else
 	{

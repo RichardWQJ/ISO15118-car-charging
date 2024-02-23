@@ -29,10 +29,12 @@ int main (void)
 
 	int ev;
 	int i;
+#if 0
 /////* the variables for the TCP IP connection*////////////////////////
 	
 	init_tcp();
 	
+#endif	
 	
 	
 /////*start ISO 15118 protocol************************/////////////////
@@ -44,13 +46,14 @@ int main (void)
 	int errn;
 
 	server_socket = socket_serverconnect(PORT_NUMMER);
+#if 0
 	//pi_server = pi_connect(PORTPI_NUMBER);
 	do
 	{
 		i=receivee(sockfd,&code,&value);
 	}while(code!=HMI_READY);
+#endif
 //////the TCP IP establishment between raspberry pi and the EVSE //
-	
 
 ////////////////////////////////////////////////////////////////////////
 

@@ -15,7 +15,7 @@ void init_tcp()
 	
 	struct sockaddr_in remoteaddr;
 	remoteaddr.sin_family = AF_INET;
-	remoteaddr.sin_addr.s_addr = inet_addr("192.168.37.253");
+	remoteaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 	remoteaddr.sin_port = htons(PORT);
 	connect(sockfd, (struct sockaddr *)&remoteaddr, sizeof(remoteaddr));
 }
